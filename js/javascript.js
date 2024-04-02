@@ -40,6 +40,10 @@ let generateGif = () => {
                     alert("GIF copied to clipBoard")
                 }).catch(() => {
                     alert("GIF copied to clipBoard")
+                    let hiddenInput = document.createElement("input"); 
+                    hiddenInput.setAttribute("type", "text");
+                    document.body.appendChild(hiddenInput);
+                    hiddenInput.value = copyLink;
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
