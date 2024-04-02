@@ -35,6 +35,10 @@ let generateGif = () => {
             copyBtn.innerText = "copy link";
             copyBtn.onclick = () => {
                 let copyLink = `https://media4.giphy.com/media/${gif.id}/giphy.mp4`;
+                navigator.clipboard.writeText(copyLink).then
+                (()=>{
+                    alert("GIF copied to clipBoard")
+                }).catch(() => {
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
