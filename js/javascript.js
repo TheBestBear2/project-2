@@ -46,6 +46,14 @@ let generateGif = () => {
                     hiddenInput.value = copyLink;
                     hiddenInput.select();
                     document.execCommand("copy");
+                    document.body.removeChild(hiddenInput);
+                });
+
+            };
+            container.append(copyBtn);
+            document.querySelector(".wrapper").append(container);
+        });
+    })
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
