@@ -5,6 +5,7 @@ let generateGif = () => {
     let loader = document.querySelector(".loader");
     loader.style.display = "block";
     document.querySelector(".wrapper").style.display = "none";
+    let q = document.getElementById("search-box").value;
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
