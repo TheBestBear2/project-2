@@ -11,7 +11,10 @@ let generateGif = () => {
     let finalURL = `https://api.giphy.com/v1/gifs/search?q=${q}&api_key=${apiKey}&limit=${gifCount}
     &offset=0&rating=g&lang=en&`;
     document.querySelector(".wrapper").innerHTML = "";
-
+    fetch(finalURL)
+    .then((resp) => resp.json())
+    .then((info) => {
+        console.log(info.data)
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
