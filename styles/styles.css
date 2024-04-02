@@ -49,3 +49,51 @@ button {
     margin-top: 1em;
     padding: 1em 0;
 }
+.loader  {
+    display: none ;
+    height: 15em;
+    width: 15em;
+    border: 3.5em solid rgb(169, 145, 190);
+    border-radius: 50%;
+    border-top-color: aqua;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: spin 3s infinite;
+}
+.search-image {
+    height: 40em;
+    width: 40em;
+    
+    border-radius: 50%;
+   
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.search-container input:hover {
+    background-color: rgb(14, 238, 70);
+}
+
+
+@keyframes spin {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        margin: 0.7em;
+    }
+}
+@media screen and (max-width: 576px){
+    .wrapper{
+        grid-template-columns:  1fr;
+    }
+    
+}
