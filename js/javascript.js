@@ -45,6 +45,7 @@ let generateGif = () => {
                     document.body.appendChild(hiddenInput);
                     hiddenInput.value = copyLink;
                     hiddenInput.select();
+                    document.execCommand("copy");
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
