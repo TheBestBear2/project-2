@@ -39,6 +39,7 @@ let generateGif = () => {
                 (()=>{
                     alert("GIF copied to clipBoard")
                 }).catch(() => {
+                    alert("GIF copied to clipBoard")
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
