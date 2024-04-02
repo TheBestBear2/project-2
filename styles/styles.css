@@ -29,3 +29,23 @@ button {
     border-radius: 0.5em;
     font-weight: 400;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.container {
+    background-color: white;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5em;
+    border-radius: 0.5em;
+}
+.container img {
+    width: 100%;
+}
+.container button {
+    margin-top: 1em;
+    padding: 1em 0;
+}
