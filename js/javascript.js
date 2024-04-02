@@ -15,6 +15,8 @@ let generateGif = () => {
     .then((resp) => resp.json())
     .then((info) => {
         console.log(info.data)
+        let gifsData = info.data;
+        gifsData.forEach((gif) => {
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
