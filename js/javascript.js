@@ -34,6 +34,7 @@ let generateGif = () => {
             let copyBtn = document.createElement("button");
             copyBtn.innerText = "copy link";
             copyBtn.onclick = () => {
+                let copyLink = `https://media4.giphy.com/media/${gif.id}/giphy.mp4`;
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
