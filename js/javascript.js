@@ -23,6 +23,8 @@ let generateGif = () => {
             console.log(gif);
             iframe.setAttribute("src", gif.images.downsized_medium.url);
             iframe.onload = () => {
+                gifCount--;
+                if (gifCount === 0) {
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
