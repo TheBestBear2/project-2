@@ -17,6 +17,12 @@ let generateGif = () => {
         console.log(info.data)
         let gifsData = info.data;
         gifsData.forEach((gif) => {
+            let container = document.createElement("div");
+            container.classList.add("container");
+            let iframe = document.createElement("img");
+            console.log(gif);
+            iframe.setAttribute("src", gif.images.downsized_medium.url);
+            iframe.onload = () => {
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
