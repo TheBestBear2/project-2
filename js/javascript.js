@@ -25,6 +25,13 @@ let generateGif = () => {
             iframe.onload = () => {
                 gifCount--;
                 if (gifCount === 0) {
+                    loader.style.display = "none";
+                    document.querySelector(".wrapper").style.display = "grid";
+                    
+                }
+            };
+            container.append(iframe);
+
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
