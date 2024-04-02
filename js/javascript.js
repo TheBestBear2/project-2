@@ -31,7 +31,9 @@ let generateGif = () => {
                 }
             };
             container.append(iframe);
-
+            let copyBtn = document.createElement("button");
+            copyBtn.innerText = "copy link";
+            copyBtn.onclick = () => {
 }
 submitBtn.addEventListener("click", generateGif);
 window.addEventListener("load", generateGif);
